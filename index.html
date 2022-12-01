@@ -12,37 +12,6 @@
       rel="stylesheet"
     />
 
-    <!-- font -->
-    <style>
-      @font-face {
-        font-family: "Inter";
-        src: url("inter/Inter-Bold.otf");
-        font-weight: 700;
-      }
-
-      @font-face {
-        font-family: "Inter";
-        src: url("inter/Inter-SemiBold.otf");
-        font-weight: 600;
-      }
-
-      @font-face {
-        font-family: "Inter";
-        src: url("inter/Inter-Medium.otf");
-        font-weight: 500;
-      }
-
-      @font-face {
-        font-family: "Inter";
-        src: url("inter/Inter-Regular.otf");
-        font-weight: 400;
-      }
-
-      body {
-        font-family: "Inter";
-      }
-    </style>
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -51,8 +20,8 @@
           screens: {
             sm: "480px",
             md: "768px",
-            lg: "	1024px",
-            xl: "1280px",
+            lg: "998px",
+            xl: "1200px",
           },
 
           extend: {
@@ -120,8 +89,9 @@
         class="bg-black flex flex-col items-center justify-between  lg:flex-row lg:bg-[url('images/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')] bg-no-repeat lg:h-[700px] bg-cover bg-center"
       >
         <div class="image">
-          <picture>
+          <picture class="lg:hidden">
             <source
+              media="(max-width:997px)"
               srcset="images/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg"
             />
             <img
@@ -185,8 +155,9 @@
         class="bg-white flex flex-col items-center lg:flex-row lg:bg-[url('images/rode-nt-usb-webheader-v7-1920x700-rgb.jpg')] bg-no-repeat lg:h-[700px] bg-cover bg-center"
       >
         <div class="image w-full">
-          <picture>
+          <picture class="lg:hidden">
             <source
+              media="(max-width:997px)"
               srcset="images/rode-nt-usb-webheader-v7-800x700-rgb.jpg"
             />
             <img
@@ -223,7 +194,8 @@
       <section
         class="bg-white flex flex-col items-center lg:flex-row lg:bg-[url('images/4.jpg')] bg-no-repeat lg:h-[700px] bg-cover bg-center"
       >
-      <div class="image w-full">
+      <div class="image w-full lg:hidden">
+        <picture class="lg:hidden">
           <source
             media="(max-width:997px)"
             srcset="images/rode-podmic-webheader-800x700-rgb-(2).jpg"
@@ -241,6 +213,7 @@
 
           <picture>
             <source
+              media="(max-width:997px)"
               srcset="images/PodMic_PL_P_01_web-top-padding-01.svg"
             />
             <img
@@ -274,7 +247,9 @@
       class="bg-white flex flex-col items-center lg:flex-row lg:bg-[url('images/5.jpg')] bg-no-repeat lg:h-[700px] bg-cover bg-center"
     >
     <div class="image w-full">
+      <picture class="lg:hidden">
         <source
+          media="(max-width:997px)"
           srcset="images/rode-wigo2-web-header-800x700.jpg"
         />
         <img
@@ -290,6 +265,7 @@
 
         <picture>
           <source
+            media="(max-width:997px)"
             srcset="images/5-right-1.svg"
           />
           <img
@@ -322,8 +298,10 @@
     <section
         class="bg-white flex flex-col items-center lg:flex-row lg:bg-[url('images/6.jpg')] bg-no-repeat lg:h-[700px] bg-cover bg-center"
       >
-      <div class="image w-full">
+      <div class="image w-full lg:hidden">
+        <picture class="lg:hidden">
           <source
+            media="(max-width:997px)"
             srcset="images/rode-nt-usb-mini-webheader-800x700-rgb.jpg"
           />
           <img
